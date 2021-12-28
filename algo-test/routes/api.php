@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/report', [BarangController::class, 'getMonthlyReport']);
 Route::get('/supplies', [BarangController::class, 'getAvgSupplies']);
+Route::post('/supplies', [BarangController::class, 'addSupplies']);
+Route::post('/supplies/distribute', [BarangController::class, 'distributeSupplies']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();

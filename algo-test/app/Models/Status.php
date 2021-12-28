@@ -12,7 +12,7 @@ class Status extends Model
     protected $table = 'status';
     protected $primaryKey = 'id';
 
-    protected $fillable = ['barang_id', 'user_id'];
+    protected $fillable = ['barang_id', 'user_id', 'jumlah'];
 
     public function barang()
     {
